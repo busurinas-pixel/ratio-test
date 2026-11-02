@@ -247,7 +247,7 @@ function homeView() {
     </div>
     ${S.diag ? `<button class="btn" data-go="spar">Начать спарринг</button>` : `<button class="btn" data-go="diag">Пройти диагностику</button>`}
     <div class="tiles">
-      <button class="tile" data-go="${S.diag ? 'result' : 'diag'}"><span class="ic">🔍</span><span class="nm">Карта развития навыков переговорщика</span>${S.diag ? '<span class="pill ok">пройдено</span>' : '<span class="note">≈ 5 минут</span>'}</button>
+      <button class="tile" data-go="${S.diag ? 'result' : 'diag'}"><span class="ic">🔍</span><span class="nm">Карта развития навыков переговорщика</span>${S.diag ? '<span class="pill ok">пройдено</span>' : '<span class="note">≈ 7 минут</span>'}</button>
       <button class="tile" data-go="lessons"><span class="ic">▶️</span><span class="nm">Уроки курса</span><span class="note">${Object.keys(S.lessons || {}).length} из ${LESSONS.length} пройдено</span></button>
       <button class="tile" data-go="progress"><span class="ic">📈</span><span class="nm">Мой прогресс</span><span class="note">${S.history.length} ${plural(S.history.length, ['спарринг', 'спарринга', 'спаррингов'])}</span></button>
       <button class="tile" data-go="second"><span class="ic">✒️</span><span class="nm">Секундант: подготовка к встрече</span><span class="note">${S.cards.length ? S.cards.length + ' ' + plural(S.cards.length, ['план', 'плана', 'планов']) : '10 минут'}</span></button>
